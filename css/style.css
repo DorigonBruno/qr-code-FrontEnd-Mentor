@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: 460px;
+  border-radius: 5px 0 0 5px;
+}
+
+span{
+  display: inline-block;
+}
+
+body{
+  background: #f3eae3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-bg{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  margin: 0 auto;
+  
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  background: #fff;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.234);
+}
+
+.conteudo{
+  padding: 20px 20px 0 0;
+  max-width: 300px;
+}
+
+.conteudo span{
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: hsl(30, 38%, 92%);
+  letter-spacing: 4px;
+}
+
+.conteudo h1{
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  max-width: 200px;
+}
+
+.conteudo p{
+  margin-bottom: 20px;
+  color: hsl(228, 12%, 48%);
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.price h2{
+  color: hsl(158, 36%, 37%);
+  font-size: 1.8rem;
+}
+
+button{
+  width: 100%;
+  padding: 16px 32px;
+  background: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+button::before{
+  content: "";
+  display: inline-block;
+  background-image: url('../images/shopping_cart_FILL0_wght400_GRAD0_opsz48\ 1\ 1.svg');
+  width: 28px;
+  height: 28px;
+}
+
+footer{
+  margin-bottom: 20px;
+}
