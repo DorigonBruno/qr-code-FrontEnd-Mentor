@@ -27,7 +27,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
   
 }
@@ -43,7 +43,6 @@ body{
 
 .conteudo{
   padding: 20px 20px 0 0;
-  max-width: 300px;
 }
 
 .conteudo span{
