@@ -23,7 +23,7 @@ body{
 
 .section-bg{
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ body{
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  color: hsl(30, 38%, 92%);
+  color: hsl(33, 49%, 88%);
   letter-spacing: 4px;
 }
 
@@ -63,6 +63,7 @@ body{
 .conteudo p{
   margin-bottom: 20px;
   color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
 }
 
 .price{
@@ -90,6 +91,12 @@ button{
   gap: 8px;
   font-size: 1rem;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover{
+  background: #1a4031;
 }
 
 button::before{
@@ -101,5 +108,5 @@ button::before{
 }
 
 footer{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
