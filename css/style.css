@@ -29,7 +29,6 @@ body{
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  
 }
 
 .card{
@@ -45,12 +44,12 @@ body{
   padding: 20px 20px 0 0;
 }
 
-.conteudo span{
+.perfume{
   display: inline-block;
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  color: hsl(33, 49%, 88%);
+  color: hsl(228, 12%, 48%);
   letter-spacing: 4px;
 }
 
@@ -73,6 +72,10 @@ body{
   margin-bottom: 40px;
 }
 
+.price span{
+  text-decoration: line-through;
+}
+
 .price h2{
   color: hsl(158, 36%, 37%);
   font-size: 1.8rem;
@@ -80,7 +83,7 @@ body{
 
 button{
   width: 100%;
-  padding: 16px 32px;
+  padding: 12px 28px;
   background: hsl(158, 36%, 37%);
   border: none;
   border-radius: 5px;
@@ -109,4 +112,74 @@ button::before{
 
 footer{
   margin-bottom: 10px;
+}
+
+@media(max-width: 500px){
+  .section-bg{
+    max-width: 450px;
+    height: 80vh;
+    width: 80vw;
+  }
+  img{
+   width: 450px;
+   object-fit: cover;
+   object-position: top;
+   border-radius: 5px 5px 0 0;
+  }
+  .card{
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin-top: 50px;
+  }
+  .conteudo{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .conteudo h1{
+    font-size: 1.5rem;
+    max-width: none;
+  }
+  .price h2{
+    font-size: 1.5rem;
+  }
+  footer{
+    margin-top: 180px;
+  }
+}
+
+@media(max-width: 350px){
+  body{
+    overflow-x: hidden;
+  }
+  .section-bg{
+    max-width: 300px;
+  }
+  img{
+    max-width: 300px;
+  }
+  .card{
+    max-width: 300px;
+  }
+  .conteudo h1{
+    font-size: 1.2rem;
+  }
+  .perfume{
+    font-size: 0.75rem;
+  }
+  .conteudo p{
+    font-size: 0.75rem;
+  }
+  .price{
+    margin-bottom: 20px;
+  }
+  .price h2{
+    font-size: 1.2rem;
+  }
+  button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+
 }
